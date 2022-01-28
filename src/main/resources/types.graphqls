@@ -1,0 +1,23 @@
+type Query {
+	llistaAlumnes: [Alumne]
+	llistaPartides: [Partida]
+	alumne(id: Int!): Alumne
+	partida(id: Int!): Partida
+}
+
+type Alumne { 
+	idAlumne: Int!
+	nom: String
+ 	partidesJugades: [Partida]
+}
+
+type Partida { 
+	id: Int!
+	puntuacio: Int
+	guanyador: Boolean!	
+}
+
+
+
+
+
